@@ -4,13 +4,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 
 @Document(collection = "Users")
-public class User {
+public class Users {
 
     private String name, password, role;
 
-    User(){}
+    public Users(){}
 
-    User(String name, String password, String role){
+    Users(String name, String password, String role){
         this.name = name;
         this.password = password;
         this.role = role;
